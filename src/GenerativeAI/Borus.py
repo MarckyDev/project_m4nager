@@ -2,7 +2,7 @@ from google import genai
 from dotenv import load_dotenv
 import os
 
-class Martin:
+class Borus:
     def __init__(self):
         load_dotenv()
         self.client = genai.Client(
@@ -12,7 +12,7 @@ class Martin:
         
         self.user_input = self.listen()
         self.is_done_listening = True
-        
+    
     def run(self) -> None:
         while not self.is_done_listening:
             self.user_input = self.listen()
@@ -23,7 +23,7 @@ class Martin:
         Configures the client with the necessary parameters.
         
         
-        The ai should respond when called "Martin"
+        The ai should respond when called "Borus"
         """
         ...
         
